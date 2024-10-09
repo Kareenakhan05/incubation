@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - College Incubation Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <video src="images/incubation_logo.mp4" autoplay loop muted playsinline>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="left-text">
+                <h2>Get in Touch With Us</h2>
+                <p>We are here to assist you. Reach out to us anytime and we'll happily answer your questions.</p>
+            </div>
+            <div class="right-form">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone No:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+    </section>
+
+       <!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="images/ipem_logo.png" alt="IPEM Logo">
+        </div>
+        <div class="footer-address">
+            <p><strong>IPEM Incubation Centre</strong></p>
+            <p>Institute of Professional Excellence and Management (IPEM)</p>
+            <p>A-13/1, South Side GT Road Industrial Area, Ghaziabad, Uttar Pradesh, India</p>
+            <p>contact Us : 
+              0991-049-1474, 
+              0991-049-1471</p>
+              <p>Mail Us: info.ug@ipemgzb.ac.in</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/groups/ipemgzb1996" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/ipemgroup" target="_blank">
+                <img src="images/instagram.jpg" alt="Instagram">
+            </a>
+            <a href="mailto:info.ug@ipemgzb.ac.in">
+                <img src="images/mail.jpg" alt="Email">
+            </a>
+        </div>
+        <p class="footer-copyright">© 2024 College Incubation Center. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

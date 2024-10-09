@@ -1,0 +1,412 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #274c76;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo video {
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #ffcc00;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Adjust image display */
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+/* For laptop screens */
+.mySlides img {
+  width: 100%;
+  height: 400px; /* Reduce the height */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  border-radius: 10px;
+}
+
+/* Media query for larger screens (laptop and desktop) */
+@media (min-width: 1024px) {
+  .mySlides img {
+    height: 650px; /* Slightly larger for bigger screens */
+  }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+  .mySlides img {
+    height: 250px; /* Adjust height for tablets */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .mySlides img {
+    height: 200px; /* Further adjust height for smaller devices */
+  }
+}
+
+
+.text {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Program Section */
+#programs {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #a0c9cb;
+}
+
+#programs h1 {
+  font-size: 2.8rem;
+  color: #155750;
+  margin-bottom: 20px;
+}
+
+#programs p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #3f7c7b;
+  line-height: 1.6;
+}
+
+.program-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.program-section img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.program-text {
+  text-align: left;
+}
+
+.program-text h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.program-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Resource Section */
+#resources {
+  padding: 50px 20px;
+  background-color: #e8f4f8;
+  text-align: center;
+}
+
+#resources h1 {
+  font-size: 2.5rem;
+  color: #0c4891;
+}
+
+#resources p {
+  font-size: 1.5rem;
+}
+
+.resource-section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resource-section-header h1 {
+  font-size: 2.5rem;
+  color: #274a76;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #274c76;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* FAQ Section */
+#faqs {
+  padding: 50px 20px;
+  background-color: #b0b8e1;
+  text-align: center;
+}
+
+#faqs h1 {
+  font-size: 2.5rem;
+}
+
+#faqs p {
+  font-size: 1.5rem;
+}
+
+.faq {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.faq h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Section */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .mySlides img {
+    height: 300px;
+  }
+
+  .program-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-section img {
+    margin: 0 0 15px 0;
+  }
+
+  .new-section h2 {
+    font-size: 2rem;
+  }
+
+  .new-section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySlides img {
+    height: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav .logo video {
+    height: 80px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .program-text h2 {
+    font-size: 1.6rem;
+  }
+}
+#footer {
+  background-color: #98938f;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer .footer-logo img {
+  max-width: 550px;
+  max-height: 250px;
+  margin-bottom: 20px;
+}
+
+#footer .footer-address p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+#footer .social-icons {
+  margin-top: 20px;
+}
+
+#footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+#footer .social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+#footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+.footer-copyright {
+  margin-top: 60px;
+ font-size: 1rem;
+ color: #1d1616; /* Change this to your desired color */
+
+
+}
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  #footer .footer-address p {
+      font-size: 1rem;
+  }
+  
+  #footer .social-icons img {
+      width: 30px;
+      height: 30px;
+  }
+}
+

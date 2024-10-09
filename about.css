@@ -1,0 +1,268 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #274c76;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo video {
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #ffcc00;
+}
+/* About Section Styles */
+#about {
+  padding: 20px;
+  width: 100%; /* Full width */
+  margin: 0; /* No margin */
+}
+
+h1 {
+  color: #5f3837; /* Heading color */
+  font-size: 2rem; /* Increase font size */
+  margin-bottom: 10px;
+  text-align: left; /* Align to the left */
+}
+p{
+  font-size: 20px;
+  font-family: cursive;
+
+}
+
+h2 {
+  color: #763131;
+  font-size: 2rem; /* Increase font size */
+  margin-top: 20px;
+  border-bottom: 2px solid #0066cc; /* Underline for section titles */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5em; /* Increase font size */
+  color: #387ec5; /* Color for h3 */
+ text-align: center;
+ 
+}
+h4{
+margin-left: 100px;
+
+  color: #387abd;
+  font-size:26px;
+}
+
+
+/* Team Section Styles */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.team-member {
+  width: calc(33% - 20px); /* Adjust to fit three members in a row */
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transitions */
+  border: 1px solid #e0e0e0; /* Border for team members */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.team-member:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.team-member img {
+  width: 60%; /* Decrease image size further */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px 10px 0 0; /* Round the top corners */
+}
+
+.team-member h3,
+.team-member p {
+  font-size: 1.1em; /* Increase font size for team member text */
+}
+
+/* Partnerships Section */
+.container {
+  background: #ffffff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.partnership, .success-story {
+  background: #f0f0f0; /* Light gray background for each item */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Padding for each item */
+  margin-bottom: 15px; /* Space between items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  display: flex;
+  flex-direction: column; /* Stack heading, text, and image vertically */
+  align-items: center; /* Center content */
+  text-align: center; /* Align text to the center */
+}
+
+.partnership:hover, .success-story:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.partnership h2, .success-story h2 {
+  margin-bottom: 10px; /* Space between heading and paragraph */
+  font-size: 1.8rem; /* Slightly larger font for the heading */
+  color: #763131; /* Color for the heading */
+}
+
+.partnership p, .success-story p {
+  font-size: 1.5rem; /* Adjusted font size for readability */
+   margin-top: 3px;/* Space between paragraph and image */
+}
+
+.partnership-image, .success-image {
+  width: 700px; /* Image size unchanged */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Round corners of images */
+  margin-top: 15px; /* Space between text and image */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .partnership, .success-story {
+      flex-direction: column; /* Stack images and text vertically */
+      text-align: center;
+  }
+
+  .partnership-image, .success-image {
+      width: 100%; /* Make image responsive */
+  }
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  nav ul {
+      flex-direction: column;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin: 5px 0;
+  }
+  
+  #about {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+  
+  .team-member {
+      width: 100%; /* Stack team members on small screens */
+  }
+
+  .partnership, .success-story {
+      flex-direction: column; /* Stack images and text vertically */
+  }
+}
+#footer {
+  background-color: #98938f;
+  color: rgb(21, 4, 84);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+#footer .footer-logo img {
+  max-width: 550px;
+  max-height: 250px;
+  margin-bottom: 20px;
+}
+
+#footer .footer-address p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+#footer .social-icons {
+  margin-top: 20px;
+}
+
+#footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+#footer .social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+#footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+.footer-copyright {
+  margin-top: 60px;
+ font-size: 1rem;
+ color: #1d1616; /* Change this to your desired color */
+
+
+}
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  #footer .footer-address p {
+      font-size: 1rem;
+  }
+  
+  #footer .social-icons img {
+      width: 30px;
+      height: 30px;
+  }
+}
+
